@@ -7,19 +7,19 @@ SkillBridge is an intelligent, multi-agent system designed to automate the compl
 
 The system autonomously reads a user's resume, analyzes the target job market, identifies critical skill gaps, generates a 4-week aggressive study plan, and iteratively rewrites the professional summary until it meets strict ATS (Applicant Tracking System) standards.
 
-# Detailed Agent Roles
+# Detailed Agent Roles🤖
 
-## Greeter	LlmAgent :	Entry point. Parses user intent, reads the PDF using read_resume_tool, and initializes the workflow.
+### Greeter	LlmAgent :	Entry point. Parses user intent, reads the PDF using read_resume_tool, and initializes the workflow.
 
-## Market Analyst :	LlmAgent	Simulates a recruiter to identify top skills and salary ranges for the target role.
+### Market Analyst :	LlmAgent	Simulates a recruiter to identify top skills and salary ranges for the target role.
 
-## Analysis Team :	SequentialAgent	Contains Gap Analyst and Study Planner.
+### Analysis Team :	SequentialAgent	Contains Gap Analyst and Study Planner.
 
-## Writing Loop :	LoopAgent	Uses a drafter and critic to iteratively refine the resume summary.
+### Writing Loop :	LoopAgent	Uses a drafter and critic to iteratively refine the resume summary.
 
-## File Saver :	LlmAgent	Manages the final output and persists files to disk.
+### File Saver :	LlmAgent	Manages the final output and persists files to disk.
 
-# The Design Patterns
+# The Design Patterns⚙️🤖
  ## The system leverages three core agentic patterns:The Coordinator Pattern (skillbridge_coordinator): 
  
  ### A central sequential agent that manages the macro-lifecycle of the request: 
@@ -30,7 +30,7 @@ The system autonomously reads a user's resume, analyzes the target job market, i
 ## Installation & Setup
  ##  Prerequisites
 
-     ##     Python 3.10+
+  ##### Python 3.10+
 
 Google Cloud project with Vertex AI/Gemini API enabled
 
