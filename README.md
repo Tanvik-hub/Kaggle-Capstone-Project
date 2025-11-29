@@ -6,6 +6,7 @@
 SkillBridge is an intelligent, multi-agent system designed to automate the complex process of career pivoting. Built using the Google Agent Development Kit (ADK) and powered by Gemini 2.0, it acts as a personalized career coach.
 
 The system autonomously reads a user's resume, analyzes the target job market, identifies critical skill gaps, generates a 4-week aggressive study plan, and iteratively rewrites the professional summary until it meets strict ATS (Applicant Tracking System) standards.
+***
 
 
 # 🌟 Project Workflow
@@ -33,6 +34,7 @@ The system autonomously reads a user's resume, analyzes the target job market, i
 
   ### The resume_drafter rewrote the summary based on this feedback.
 
+***
 
 ## Final Output: The system saved the plan and the new summary to final_career_plan.txt.
 
@@ -44,6 +46,7 @@ The system autonomously reads a user's resume, analyzes the target job market, i
  ### Research $\rightarrow$ Analysis $\rightarrow$ Writing $\rightarrow$ Saving.The Sequential Pattern (analysis_team): A pipeline where the output of  ### one agent (gap_analyst) becomes the direct input context for the next (study_planner).
  
   ### The Iterative Refinement Pattern (writing_loop): A "Generator-Critic" loop where a writer drafts content and a critic scores it. If the score is  ### below 9/10, the feedback is fed back into the writer for another attempt.
+***
 
 
 # 📄 Sample Output File
@@ -52,6 +55,7 @@ The system autonomously reads a user's resume, analyzes the target job market, i
 
 
 
+***
 
 ## Installation & Setup
  ##  Prerequisites
@@ -79,6 +83,7 @@ pip install -r requirements.txt
 
 Dependencies include google-adk, google-generativeai, pypdf.
 
+***
 
 # How to Run
 ## Step 1: Upload Your Resume
@@ -103,6 +108,8 @@ The agent will run through research, analysis, and refinement phases.
 Generated output will be saved in:
 
 output/final_career_plan.txt
+
+***
 
 # 📂 Project Structure
 skillbridge/
