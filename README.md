@@ -15,6 +15,10 @@ Analysis Team :	SequentialAgent	Contains Gap Analyst and Study Planner.
 Writing Loop :	LoopAgent	Uses a drafter and critic to iteratively refine the resume summary.
 File Saver :	LlmAgent	Manages the final output and persists files to disk.
 
+# The Design Patterns
+ - The system leverages three core agentic patterns:The Coordinator Pattern (skillbridge_coordinator): 
+ A central sequential agent that manages the macro-lifecycle of the request: Research $\rightarrow$ Analysis $\rightarrow$ Writing $\rightarrow$ Saving.The Sequential Pattern (analysis_team): A pipeline where the output of one agent (gap_analyst) becomes the direct input context for the next (study_planner).The Iterative Refinement Pattern (writing_loop): A "Generator-Critic" loop where a writer drafts content and a critic scores it. If the score is below 9/10, the feedback is fed back into the writer for another attempt.
+
 
 ## Installation & Setup
  ##  Prerequisites
@@ -67,3 +71,11 @@ Generated output will be saved in:
 
 output/final_career_plan.txt
 
+# 📂 Project Structure
+skillbridge/
+├── agents.py            # Definition of all ADK Agents (Sequential, Loop, etc.)
+├── app.py               # Main application entry point (Initializes Runner)
+├── tools.py             # Custom tools (PDF Reader, State Management, File I/O)
+├── resumes/             # Input directory for PDF resumes
+├── output/              # Output directory for generated plans
+└── requirements.txt     # Python dependencies
