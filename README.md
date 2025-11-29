@@ -48,7 +48,11 @@ The system autonomously reads a user's resume, analyzes the target job market, i
   ### The Iterative Refinement Pattern (writing_loop): A "Generator-Critic" loop where a writer drafts content and a critic scores it. If the score is  ### below 9/10, the feedback is fed back into the writer for another attempt.
 ***
 
+# Architecture
 
+<img width="1629" height="536" alt="image" src="https://github.com/user-attachments/assets/4390f2aa-052a-4aa9-bc4d-e99d4f02ad9a" />
+
+***
 # 📄 Sample Output File
 
 --- CAREER PIVOT PLAN ---
