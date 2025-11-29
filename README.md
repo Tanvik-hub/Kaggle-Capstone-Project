@@ -41,3 +41,29 @@ pip install -r requirements.txt
 
 
 Dependencies include google-adk, google-generativeai, pypdf.
+
+
+# How to Run
+## Step 1: Upload Your Resume
+
+Place your PDF inside the resumes/ folder.
+
+Rename it to:
+
+test_resume.pdf
+
+## Step 2: Execute the Agent
+python app.py
+
+## Step 3: Interact
+
+When prompted in the terminal, press Enter to use the default demo prompt.
+
+The agent will run through research, analysis, and refinement phases.
+
+## Step 4: View Results
+
+Generated output will be saved in:
+
+output/final_career_plan.txt
+
